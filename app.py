@@ -202,7 +202,7 @@ elif current_page == "👥 View Alumni + 🔍 Sort/Search":
                 col1, col2, col3, col4 = st.columns(4)
                 
                 with col1:
-                    search_id = st.text_input("🔍 Search by Alumni ID", placeholder="e.g., 001-2008-09")
+                    search_id = st.text_input("🔍 Search by Alumni ID", placeholder="e.g., 001-2008-10")
                 
                 with col2:
                     batches = sorted({d.get("batch") for d in alumni_records.values() if d.get("batch")})
@@ -303,7 +303,7 @@ elif current_page == "✍️ Create Alumni & Upload Photo":
             firstname = st.text_input("First Name *", help="Required field")
             surname = st.text_input("Surname", help="Optional")
             gender = st.selectbox("Gender *", ["Male", "Female", "Other"])
-            batch = st.text_input("Batch (e.g., 2008-09) *", help="Format: YYYY-YY")
+            batch = st.text_input("Batch (e.g., 2008-10) *", help="Format: YYYY-YY")
         
         with col2:
             linkedin_url = st.text_input("LinkedIn URL *", help="Full LinkedIn profile URL")
@@ -405,7 +405,7 @@ elif current_page == "🔧 Manage Alumni (Update/Delete)":
     
     # Search for alumni to manage
     st.subheader("🔍 Find Alumni to Manage")
-    search_id = st.text_input("Enter Alumni ID", placeholder="e.g., 001-2008-09")
+    search_id = st.text_input("Enter Alumni ID", placeholder="e.g., 001-2008-10")
     
     col1, col2 = st.columns(2)
     with col1:
@@ -623,3 +623,4 @@ st.markdown("*Department of Statistics - Sardar Patel University | Developed by 
 
 
 #streamlit run frontend.py
+
