@@ -621,4 +621,5 @@ st.markdown("*Department of Statistics - Sardar Patel University | Developed by 
 
 
 
+
 #streamlit run frontend.py
